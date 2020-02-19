@@ -17,7 +17,8 @@ public class TiradaMonedaCX {
 				imprime(contadorCaras, contadorCruces, maximoCarasDoblesConsecutivas, maximoCrucesDoblesConsecutivas);
 			}
 
-	private static void imprime(int contadorCaras, int contadorCruces, int maximoCarasDoblesConsecutivas,
+	//Cambiada visibilidad para poder usarse en extraer.
+	static void imprime(int contadorCaras, int contadorCruces, int maximoCarasDoblesConsecutivas,
 			int maximoCrucesDoblesConsecutivas) {
 		System.out.println("Caras: " + contadorCaras + ", Cruces: " + contadorCruces);
 		System.out.println("Maximo de caras dobles consecutivas: " + maximoCarasDoblesConsecutivas);

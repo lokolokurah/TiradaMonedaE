@@ -73,10 +73,18 @@ public class TiradaMonedaCX {
 			}
 		}
 
-		imprimir(contadorCaras, contadorCruces, maximoCarasDoblesConsecutivas, maximoCrucesDoblesConsecutivas);
+		imprime(contadorCaras, contadorCruces, maximoCarasDoblesConsecutivas, maximoCrucesDoblesConsecutivas);
 	}
 
+	/**
+	 * @deprecated Use {@link #imprime(int,int,int,int)} instead
+	 */
 	private static void imprimir(int contadorCaras, int contadorCruces, int maximoCarasDoblesConsecutivas,
+			int maximoCrucesDoblesConsecutivas) {
+				imprime(contadorCaras, contadorCruces, maximoCarasDoblesConsecutivas, maximoCrucesDoblesConsecutivas);
+			}
+
+	private static void imprime(int contadorCaras, int contadorCruces, int maximoCarasDoblesConsecutivas,
 			int maximoCrucesDoblesConsecutivas) {
 		System.out.println("Caras: " + contadorCaras + ", Cruces: " + contadorCruces);
 		System.out.println("Maximo de caras dobles consecutivas: " + maximoCarasDoblesConsecutivas);
